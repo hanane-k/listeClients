@@ -1,0 +1,27 @@
+ 
+    [
+        {
+            "id": 1,
+            "nom": "rym",
+            "age": "12",
+            "ville": "ain taya"
+        },
+        {
+            "id": 2,
+            "nom": "ceryne",
+            "age": "10",
+            "ville": "tizi ouzou"
+        },
+        {
+            "id": 3,
+            "nom": "wassim",
+            "age": "8",
+            "ville": "djanet"
+        },
+        {
+            "id": 4,
+            "nom": "aline",
+            "age": "2",
+            "ville": "tizi ouzou"
+        }
+    ]
