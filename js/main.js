@@ -29,3 +29,9 @@ xhttp.onreadystatechange = function() {
 };
   xhttp.open("GET", "clients.json", true);
   xhttp.send();
+
+  function trier() {
+    // recuperation de la div qui va contenir le dropdown
+    var dropdown = document.getElementById("dropdown");
+    console.log(dropdown);
+  }
