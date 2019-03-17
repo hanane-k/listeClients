@@ -43,13 +43,13 @@ function showClients(clients) {
 function trier(clients) { 
   for (let index = 0; index < option.length; index++) {
     option[index].onclick = function() {
-      // var tr = node.removeChild(th);
+      // tr.removeChild(td);
       // if(this.age) {
         clients.sort(function(a,b) {return a.age - b.age});
         showClients(clients);
         alert(option[index]);
-      if (a < b) {return -1;}
-      if (a > b) {return 1;}
+      clients.sort(function(a,b) {if (a < b) {return -1;};})
+      clients.sort(function(a,b) {if (a > b) {return 1;};})
       return 0;
     }
   }
