@@ -26,13 +26,12 @@
   </header>
   <main class="container text-center mb-5 mt-5">
       <h1>Liste des clients</h1>
-      <div class="dropdown">
-        <a class="btn btn-success dropdown-toggle m-5" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Selectionner par  
-        </a>
-        <div id="dropdown">
-        </div>
-      </div>      
+      <select id="dropdown" class="btn btn-success dropdown-toggle m-5">
+        <option value="id">id</option>
+        <option value="nom">nom</option>
+        <option value="age">age</option>
+        <option value="ville">ville</option>
+      </select>      
       <table class="table table-striped bg-danger text-white text-center" id="clients">
         <thead>
           <tr>
