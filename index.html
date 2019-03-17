@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>La liste des clients</title>
   <meta name="description" content="">
   <meta name="viewport" content="">
 
@@ -14,10 +14,42 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-9NlqO4dP5KfioUGS568UFwM3lbWf3Uj3Qb7FBHuIuhLoDp3ZgAqPE1/MYLEBPZYM" crossorigin="anonymous">
 </head>
 
 <body>
-  <h1>hello</h1>
+  <header class="jumbotron text-center">
+      <h1 class="display-4">Application en JSON!</h1>
+      <p class="lead">Premiere application en JavaScript</p>
+      <hr class="my-4">
+      <a class="float-left btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </header>
+  <main class="container text-center mb-5 mt-5">
+      <h1>Liste des clients</h1>
+      <select id="dropdown" class="btn btn-success dropdown-toggle m-5">
+        <option value="id">id</option>
+        <option value="nom">nom</option>
+        <option value="age">age</option>
+        <option value="ville">ville</option>
+      </select>      
+      <table class="table table-striped bg-danger text-white text-center" id="clients">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Age</th>
+            <th scope="col">Ville</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+
+  </main>
+  <footer class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  </footer>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
